@@ -10,7 +10,7 @@ import java.util.logging.Logger;
 
 @MessageDriven(name = "SimpleMdbOnTopic", activationConfig = {
         @ActivationConfigProperty(propertyName = "destinationType", propertyValue = "javax.jms.Topic"),
-        @ActivationConfigProperty(propertyName = "destination", propertyValue = "queue/InTopic"),
+        @ActivationConfigProperty(propertyName = "destination", propertyValue = "jms/topic/InTopic"),
         @ActivationConfigProperty(propertyName = "acknowledgeMode", propertyValue = "Auto-acknowledge") })
 public class SimpleMdbOnTopic implements MessageListener {
 

@@ -29,10 +29,10 @@ public class ClientServlet extends HttpServlet {
     @Resource(mappedName = "java:/ConnectionFactory")
     private ConnectionFactory connectionFactory;
 
-    @Resource(mappedName = "java:/queue/InQueue")
+    @Resource(mappedName = "java:/jms/queue/InQueue")
     private Queue queue;
 
-    @Resource(mappedName = "java:/topic/InTopic")
+    @Resource(mappedName = "java:/jms/topic/InTopic")
     private Topic topic;
 
     @Override

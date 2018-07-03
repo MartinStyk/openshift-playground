@@ -10,7 +10,7 @@ import javax.jms.TextMessage;
 
 @MessageDriven(name = "SimpleMdbOnQueue", activationConfig = {
         @ActivationConfigProperty(propertyName = "destinationType", propertyValue = "javax.jms.Queue"),
-        @ActivationConfigProperty(propertyName = "destination", propertyValue = "queue/InQueue"),
+        @ActivationConfigProperty(propertyName = "destination", propertyValue = "jms/queue/InQueue"),
         @ActivationConfigProperty(propertyName = "acknowledgeMode", propertyValue = "Auto-acknowledge") })
 public class SimpleMdbOnQueue implements MessageListener {
 
